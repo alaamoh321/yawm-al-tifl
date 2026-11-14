@@ -6,6 +6,7 @@ function route() {
   document.querySelectorAll('.tabbar a').forEach((a) => a.classList.toggle('on', a.dataset.tab === r));
   document.title = (r ? $(`#page-${r}`).dataset.title + ' - ' : '') + 'اليوم العالمي للطفل';
   window.scrollTo(0, 0);
+  if (r === 'game') Game.focus();
 }
 
 Memories.init();

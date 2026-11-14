@@ -48,10 +48,9 @@ const Game = (() => {
     if (s.classList.contains('done')) return say('هذا الحق له صورته بالفعل ✅', false);
     if (p.dataset.id === s.dataset.id) {
       s.classList.add('done'); s.disabled = true; s.querySelector('.sp').innerHTML = pic(p.dataset.id);
-      p.remove(); selected = null; done++; update();
+      p.classList.remove('sel'); p.classList.add('gone'); p.disabled = true; selected = null; done++; update();
       if (done === RIGHTS.length) {
         say('', true); $('#gWin').hidden = false; $('#gReset').hidden = false;
-        $('#gWin').scrollIntoView({ block: 'nearest', behavior: 'smooth' });
       } else say(CHEER[cheerIdx++ % CHEER.length], true);
     } else {
       p.classList.remove('sel'); selected = null;
@@ -62,7 +61,7 @@ const Game = (() => {
 
   // سحب باللمس أو الفأرة؛ الحركة القصيرة تُعدّ نقرًا للاختيار
   function bindDrag(b) {
-    let sx, sy, ghost = null, moved = false, scroller = 0;
+    let sx, sy, ghost = null, moved = false;
     b.addEventListener('pointerdown', (e) => {
       sx = e.clientX; sy = e.clientY; moved = false; b.setPointerCapture(e.pointerId);
     });
@@ -74,13 +73,10 @@ const Game = (() => {
       }
       if (ghost) {
         ghost.style.left = e.clientX + 'px'; ghost.style.top = e.clientY + 'px';
-        clearInterval(scroller); // تمرير الصفحة عند السحب قرب الحافة
-        const edge = e.clientY < 90 ? -14 : e.clientY > innerHeight - 90 ? 14 : 0;
-        if (edge) scroller = setInterval(() => scrollBy(0, edge), 30);
       }
     });
     const end = (e) => {
-      if (sx === undefined) return; sx = undefined; clearInterval(scroller);
+      if (sx === undefined) return; sx = undefined;
       if (moved) {
         if (ghost) { ghost.remove(); ghost = null; }
         b.classList.remove('lift');
@@ -90,10 +86,16 @@ const Game = (() => {
       } else select(selected === b ? null : b);
     };
     b.addEventListener('pointerup', end);
-    b.addEventListener('pointercancel', () => { sx = undefined; clearInterval(scroller); if (ghost) { ghost.remove(); ghost = null; } b.classList.remove('lift'); });
+    b.addEventListener('pointercancel', () => { sx = undefined; if (ghost) { ghost.remove(); ghost = null; } b.classList.remove('lift'); });
     b.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); select(selected === b ? null : b); } });
   }
 
+  // لا تتحرك الصفحة أثناء السحب داخل اللعبة
+  document.addEventListener('touchmove', (e) => { if (document.querySelector('.ghost')) e.preventDefault(); }, { passive: false });
+
+  // اجعل مساحة اللعب كاملة داخل الشاشة عند فتح القسم
+  function focus() { requestAnimationFrame(() => $('#gScore').scrollIntoView({ block: 'start' })); }
+
   function init() { $('#gReset').addEventListener('click', start); start(); }
-  return { init };
+  return { init, focus };
 })();
