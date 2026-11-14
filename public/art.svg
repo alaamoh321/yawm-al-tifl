@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="star" viewBox="0 0 64 64">
+    <path d="M32 5l8.2 17.2 18.8 2.5-13.8 13 3.5 18.7L32 47.2 15.3 56.4l3.5-18.7L5 24.7l18.8-2.5z" fill="var(--c,#FFC93C)" stroke="#F2A100" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="26" cy="29" r="2.4" fill="#3b2f4a"/><circle cx="38" cy="29" r="2.4" fill="#3b2f4a"/>
+    <path d="M28 35q4 4 8 0" stroke="#3b2f4a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="heart" viewBox="0 0 64 64">
+    <path d="M32 57S6 41 6 22a13 13 0 0126-5 13 13 0 0126 5c0 19-26 35-26 35z" fill="var(--c,#FF6B8B)" stroke="#D93F6A" stroke-width="3" stroke-linejoin="round"/>
+    <ellipse cx="19" cy="22" rx="4" ry="6" fill="#fff" opacity=".5" transform="rotate(25 19 22)"/>
+  </symbol>
+  <symbol id="cloud" viewBox="0 0 64 64">
+    <path d="M16 50a12 12 0 01-2-23.8A16 16 0 0144 21a14 14 0 016 29z" fill="#fff" stroke="#A9DDF7" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="25" cy="38" r="2.4" fill="#3b2f4a"/><circle cx="39" cy="38" r="2.4" fill="#3b2f4a"/>
+    <ellipse cx="20" cy="43" rx="4" ry="2.6" fill="#FF9DB5" opacity=".6"/><ellipse cx="44" cy="43" rx="4" ry="2.6" fill="#FF9DB5" opacity=".6"/>
+    <path d="M28 43q4 4 8 0" stroke="#3b2f4a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="balloon" viewBox="0 0 64 64">
+    <path d="M32 4C20 4 12 13 12 24c0 12 10 21 20 23 10-2 20-11 20-23C52 13 44 4 32 4z" fill="var(--c,#FF6B6B)"/>
+    <path d="M28.5 47.5L32 52l3.5-4.5z" fill="var(--c,#FF6B6B)"/>
+    <path d="M32 52c-5 4 5 6 0 11" stroke="#7a5c3e" stroke-width="2" fill="none"/>
+    <ellipse cx="23" cy="19" rx="4" ry="7" fill="#fff" opacity=".5" transform="rotate(20 23 19)"/>
+  </symbol>
+  <symbol id="sun" viewBox="0 0 64 64">
+    <g stroke="#FFB400" stroke-width="4" stroke-linecap="round"><path d="M32 3v8M32 53v8M3 32h8M53 32h8M11.5 11.5l5.6 5.6M46.9 46.9l5.6 5.6M11.5 52.5l5.6-5.6M46.9 17.1l5.6-5.6"/></g>
+    <circle cx="32" cy="32" r="15" fill="#FFD43B" stroke="#FFB400" stroke-width="3"/>
+    <circle cx="27" cy="30" r="2.2" fill="#3b2f4a"/><circle cx="37" cy="30" r="2.2" fill="#3b2f4a"/>
+    <path d="M27 36q5 5 10 0" stroke="#3b2f4a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="flower" viewBox="0 0 64 96">
+    <path d="M32 42v52" stroke="#4FB35E" stroke-width="4" stroke-linecap="round"/>
+    <path d="M32 80c-12 0-16-8-16-14 10 0 16 5 16 14zM32 70c10 0 15-6 15-12-9 0-15 4-15 12z" fill="#6BCB77"/>
+    <g fill="var(--c,#FF8FB1)"><circle cx="46" cy="28" r="10"/><circle cx="36.3" cy="41.3" r="10"/><circle cx="20.7" cy="36.2" r="10"/><circle cx="20.7" cy="19.8" r="10"/><circle cx="36.3" cy="14.7" r="10"/></g>
+    <circle cx="32" cy="28" r="8" fill="#FFD43B"/>
+  </symbol>
+  <symbol id="girl" viewBox="0 0 100 150">
+    <ellipse cx="41" cy="145" rx="9" ry="4" fill="#5a4a6a"/><ellipse cx="59" cy="145" rx="9" ry="4" fill="#5a4a6a"/>
+    <rect x="36" y="120" width="9" height="24" rx="4" fill="var(--skin,#FFD9B8)"/><rect x="55" y="120" width="9" height="24" rx="4" fill="var(--skin,#FFD9B8)"/>
+    <path d="M39 85L18 64M61 85l21-21" stroke="var(--skin,#FFD9B8)" stroke-width="9" stroke-linecap="round"/>
+    <path d="M38 78h24l13 48H25z" fill="var(--dress,#FF6B6B)"/>
+    <g fill="#fff" opacity=".65"><circle cx="40" cy="104" r="3"/><circle cx="58" cy="110" r="3"/><circle cx="50" cy="92" r="3"/><circle cx="34" cy="118" r="3"/><circle cx="66" cy="120" r="3"/></g>
+    <circle cx="22" cy="56" r="10" fill="var(--hair,#5a3b2e)"/><circle cx="78" cy="56" r="10" fill="var(--hair,#5a3b2e)"/>
+    <circle cx="50" cy="48" r="25" fill="var(--skin,#FFD9B8)"/>
+    <path d="M25 46a25 25 0 0150 0c-9-10-17-12-25-10-8-2-16 0-25 10z" fill="var(--hair,#5a3b2e)"/>
+    <circle cx="27" cy="40" r="6" fill="var(--bow,#FFC93C)"/><circle cx="73" cy="40" r="6" fill="var(--bow,#FFC93C)"/>
+    <circle cx="41" cy="51" r="3.2" fill="#3b2f4a"/><circle cx="59" cy="51" r="3.2" fill="#3b2f4a"/><circle cx="42" cy="50" r="1" fill="#fff"/><circle cx="60" cy="50" r="1" fill="#fff"/>
+    <ellipse cx="34" cy="59" rx="5" ry="3.5" fill="#FF8FA3" opacity=".55"/><ellipse cx="66" cy="59" rx="5" ry="3.5" fill="#FF8FA3" opacity=".55"/>
+    <path d="M42 60q8 9 16 0z" fill="#B23A48" stroke="#8a2b3b" stroke-width="2" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="boy" viewBox="0 0 100 150">
+    <ellipse cx="41" cy="145" rx="9" ry="4" fill="#5a4a6a"/><ellipse cx="59" cy="145" rx="9" ry="4" fill="#5a4a6a"/>
+    <rect x="36" y="118" width="9" height="26" rx="4" fill="var(--skin,#FFD9B8)"/><rect x="55" y="118" width="9" height="26" rx="4" fill="var(--skin,#FFD9B8)"/>
+    <path d="M34 100h32l2 24H52l-2-12-2 12H32z" fill="var(--pants,#4C6EF5)"/>
+    <path d="M36 85L16 66M64 85l20-19" stroke="var(--skin,#FFD9B8)" stroke-width="9" stroke-linecap="round"/>
+    <path d="M33 78h34l3 28H30z" fill="var(--shirt,#FFC93C)"/>
+    <path d="M50 88l2.5 5 5.5.8-4 3.9 1 5.5-5-2.6-5 2.6 1-5.5-4-3.9 5.500-.8z" fill="#fff" opacity=".8"/>
+    <circle cx="25" cy="50" r="5" fill="var(--skin,#FFD9B8)"/><circle cx="75" cy="50" r="5" fill="var(--skin,#FFD9B8)"/>
+    <circle cx="50" cy="48" r="25" fill="var(--skin,#FFD9B8)"/>
+    <path d="M25 44a25 25 0 0150 0c-7-6-15-4-19-10-5 6-19 4-31 10z" fill="var(--hair,#3b2a22)"/>
+    <path d="M47 22q2-10 11-6" stroke="var(--hair,#3b2a22)" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <circle cx="41" cy="51" r="3.2" fill="#3b2f4a"/><circle cx="59" cy="51" r="3.2" fill="#3b2f4a"/><circle cx="42" cy="50" r="1" fill="#fff"/><circle cx="60" cy="50" r="1" fill="#fff"/>
+    <ellipse cx="34" cy="59" rx="5" ry="3.5" fill="#FF8FA3" opacity=".55"/><ellipse cx="66" cy="59" rx="5" ry="3.5" fill="#FF8FA3" opacity=".55"/>
+    <path d="M42 60q8 9 16 0z" fill="#B23A48" stroke="#8a2b3b" stroke-width="2" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="teacher" viewBox="0 0 80 80">
+    <circle cx="40" cy="40" r="40" fill="var(--bg,#EADCFF)"/>
+    <path d="M12 76c2-14 13-20 28-20s26 6 28 20z" fill="var(--hijab,#8E5BD9)"/>
+    <path d="M40 12C25 12 20 27 20 40c0 15 8 21 20 21s20-6 20-21c0-13-5-28-20-28z" fill="var(--hijab,#8E5BD9)"/>
+    <ellipse cx="40" cy="41" rx="14" ry="16" fill="#FFD9B8"/>
+    <circle cx="35" cy="40" r="1.9" fill="#3b2f4a"/><circle cx="45" cy="40" r="1.9" fill="#3b2f4a"/>
+    <ellipse cx="31.500" cy="46" rx="3" ry="2" fill="#FF8FA3" opacity=".6"/><ellipse cx="48.500" cy="46" rx="3" ry="2" fill="#FF8FA3" opacity=".6"/>
+    <path d="M35 47q5 5 10 0" stroke="#B23A48" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol>
+</svg>

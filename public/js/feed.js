@@ -15,13 +15,13 @@ const Feed = (() => {
     }
     const head = el('div');
     head.append(el('div', 'nm', w.name), el('div', 'tm', timeAgo(w.created_at)));
-    c.append(head, el('p', 'tx', w.wish));
+    c.append(head, el('p', 'tx', w.wish), art(['star', 'heart', 'cloud', 'sun', 'balloon'][w.id % 5], 'stamp'));
     return c;
   }
 
   function momCard(m, isNew) {
     const c = el('article', `mcard${isNew ? ' new' : ''}`);
-    c.append(el('div', 'to', `إلى ${m.child_name}`), el('p', null, m.message), el('div', 'tm', timeAgo(m.created_at)));
+    c.append(art('heart', 'stamp'), el('div', 'to', `إلى ${m.child_name}`), el('p', null, m.message), el('div', 'tm', timeAgo(m.created_at)));
     return c;
   }
 

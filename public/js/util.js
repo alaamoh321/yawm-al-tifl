@@ -18,6 +18,19 @@ function el(tag, cls, text) {
   return e;
 }
 
+// an illustration from the shared sprite (/art.svg)
+function art(id, cls, style) {
+  const NS = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(NS, 'svg');
+  svg.setAttribute('class', cls);
+  svg.setAttribute('aria-hidden', 'true');
+  const use = document.createElementNS(NS, 'use');
+  use.setAttribute('href', `/art.svg#${id}`);
+  if (style) use.setAttribute('style', style);
+  svg.append(use);
+  return svg;
+}
+
 async function api(path, body) {
   const res = await fetch(path, body ? { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) } : undefined);
   const data = await res.json().catch(() => ({}));

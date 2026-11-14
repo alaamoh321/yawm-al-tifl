@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>اليوم العالمي للطفل - أمنياتنا وذكرياتنا</title>
-  <meta name="description" content="موقع احتفالي باليوم العالمي للطفل: أمنيات الأطفال، ركن الأمهات، لعبتنا، ذكرياتنا وكلمة المعلمة.">
+  <title>اليوم العالمي للطفل - ابتدائية مخطط ٥٤ والروضة الملحقة بها</title>
+  <meta name="description" content="احتفال اليوم العالمي للطفل في ابتدائية مخطط ٥٤ والروضة الملحقة بها: أمنيات الأطفال، ركن الأمهات، لعبتنا، ذكرياتنا وكلمة المعلمة.">
   <meta name="theme-color" content="#FFC93C">
   <meta property="og:title" content="اليوم العالمي للطفل">
   <meta property="og:description" content="شاركنا أمنيتك واحتفل معنا بيوم الطفل!">
@@ -13,32 +13,60 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/pages.css">
 </head>
 <body>
 <div class="phone">
-  <header class="topbar">
-    <a href="#/" class="brand" aria-label="الصفحة الرئيسية">
-      <svg viewBox="0 0 24 24" class="ic"><path d="M12 3l2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 16.4 6.8 19.2l1-5.9L3.5 9.2l5.9-.8z"/></svg>
-      <span>يوم الطفل</span>
-    </a>
-    <a href="#/" class="back" id="backBtn" hidden>
-      <svg viewBox="0 0 24 24" class="ic"><path d="M9 6l6 6-6 6"/></svg> الرئيسية
-    </a>
+  <header class="top">
+    <div class="logo-chip"><img src="/moe-logo.png" alt="شعار وزارة التعليم" width="119" height="61"></div>
+    <div class="school">
+      <small>وزارة التعليم</small>
+      <strong>ابتدائية مخطط ٥٤<br>والروضة الملحقة بها</strong>
+    </div>
   </header>
+  <div class="staff" aria-label="بيانات الروضة">
+    <div class="person">
+      <svg class="av" aria-hidden="true"><use href="/art.svg#teacher" style="--hijab:#8E5BD9;--bg:#EADCFF"/></svg>
+      <div><small>المعلمة</small><b>آلاء بنت محمد بن مفرس</b></div>
+    </div>
+    <div class="person">
+      <svg class="av" aria-hidden="true"><use href="/art.svg#teacher" style="--hijab:#1FA8A0;--bg:#CDF3EE"/></svg>
+      <div><small>مديرة المدرسة</small><b>عايشة جازي بن دابس</b></div>
+    </div>
+  </div>
 
   <main>
     <!-- الرئيسية -->
     <section class="page" id="page-home" data-title="الرئيسية">
       <div class="hero">
-        <div class="balloons" aria-hidden="true">
-          <svg viewBox="0 0 300 150">
-            <g stroke="#7a5c3e" stroke-width="2" fill="none"><path d="M60 80 Q70 120 90 150"/><path d="M150 70 Q150 110 150 150"/><path d="M240 80 Q230 120 210 150"/></g>
-            <ellipse cx="60" cy="52" rx="30" ry="36" fill="#FF6B6B"/><ellipse cx="150" cy="40" rx="34" ry="40" fill="#4CC9F0"/><ellipse cx="240" cy="52" rx="30" ry="36" fill="#6BCB77"/>
-            <ellipse cx="50" cy="40" rx="7" ry="11" fill="#fff" opacity=".45"/><ellipse cx="138" cy="26" rx="8" ry="12" fill="#fff" opacity=".45"/><ellipse cx="230" cy="40" rx="7" ry="11" fill="#fff" opacity=".45"/>
-          </svg>
-        </div>
         <p class="kicker">٢٠ نوفمبر</p>
         <h1>اليوم العالمي<br><span>للطفل</span></h1>
+        <div class="scene" aria-hidden="true">
+          <svg viewBox="0 0 360 300">
+            <use href="/art.svg#sun" x="8" y="8" width="70" height="70"/>
+            <use href="/art.svg#cloud" x="240" y="6" width="84" height="84"/>
+            <use href="/art.svg#cloud" x="92" y="36" width="60" height="60"/>
+            <g class="bal">
+              <use href="/art.svg#balloon" x="150" y="12" width="64" height="64" style="--c:#FF6B6B"/>
+              <use href="/art.svg#balloon" x="196" y="30" width="56" height="56" style="--c:#4CC9F0"/>
+              <use href="/art.svg#balloon" x="112" y="104" width="46" height="46" style="--c:#B388EB"/>
+              <use href="/art.svg#balloon" x="270" y="108" width="46" height="46" style="--c:#6BCB77"/>
+            </g>
+            <use href="/art.svg#star" x="20" y="96" width="26" height="26"/>
+            <use href="/art.svg#star" x="318" y="70" width="24" height="24"/>
+            <use href="/art.svg#heart" x="58" y="70" width="24" height="24"/>
+            <use href="/art.svg#heart" x="300" y="150" width="26" height="26" style="--c:#FF9DB5"/>
+            <path d="M0 252Q90 212 180 238T360 226V300H0z" fill="#9BE08F"/>
+            <path d="M0 274Q110 248 220 266T360 258V300H0z" fill="#6BCB77"/>
+            <use href="/art.svg#girl" x="26" y="138" width="86" height="129" style="--dress:#FF6B6B"/>
+            <use href="/art.svg#boy" x="132" y="124" width="98" height="147"/>
+            <use href="/art.svg#girl" x="250" y="138" width="86" height="129" style="--dress:#4CC9F0;--hair:#2f2a3b;--bow:#FF8FB1"/>
+            <use href="/art.svg#flower" x="4" y="238" width="26" height="40" style="--c:#FF8FB1"/>
+            <use href="/art.svg#flower" x="116" y="244" width="26" height="40" style="--c:#FFD43B"/>
+            <use href="/art.svg#flower" x="226" y="246" width="26" height="40" style="--c:#B388EB"/>
+            <use href="/art.svg#flower" x="334" y="240" width="26" height="40" style="--c:#FF6B6B"/>
+          </svg>
+        </div>
         <p class="lead">لكل طفل حلم جميل، تعالَ نكتب أمنياتنا ونلعب ونتذكر أجمل اللحظات معًا!</p>
         <a href="#/wishes" class="btn btn-big btn-coral">
           <svg viewBox="0 0 24 24" class="ic"><path d="M12 21s-7-4.5-9.3-9A5.3 5.3 0 0112 6.2 5.3 5.3 0 0121.3 12C19 16.5 12 21 12 21z"/></svg>
@@ -47,23 +75,29 @@
       </div>
 
       <div class="stats">
-        <div><b id="statWishes">٠</b><span>أمنية</span></div>
-        <div><b id="statMoms">٠</b><span>رسالة أم</span></div>
+        <div><svg class="art" aria-hidden="true"><use href="/art.svg#star"/></svg><b id="statWishes">٠</b><span>أمنية من أطفالنا</span></div>
+        <div><svg class="art" aria-hidden="true"><use href="/art.svg#heart"/></svg><b id="statMoms">٠</b><span>رسالة من أمهاتنا</span></div>
       </div>
 
+      <h2 class="sec-title">اختر قسمك المفضل</h2>
       <nav class="menu" aria-label="أقسام الموقع">
-        <a href="#/wishes" class="tile t-yellow"><svg viewBox="0 0 24 24" class="ic"><path d="M12 3l2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 16.4 6.8 19.2l1-5.9L3.5 9.2l5.9-.8z"/></svg><strong>أمنيات الأطفال</strong><small>اكتب أمنيتك</small></a>
-        <a href="#/moms" class="tile t-pink"><svg viewBox="0 0 24 24" class="ic"><path d="M12 21s-7-4.5-9.3-9A5.3 5.3 0 0112 6.2 5.3 5.3 0 0121.3 12C19 16.5 12 21 12 21z"/></svg><strong>ركن الأمهات</strong><small>رسائل من القلب</small></a>
-        <a href="#/game" class="tile t-blue"><svg viewBox="0 0 24 24" class="ic"><rect x="3" y="8" width="18" height="10" rx="5"/><path d="M8 11v4M6 13h4M16 12h.01M18 14h.01"/></svg><strong>لعبتنا</strong><small>لعبة الأزواج</small></a>
-        <a href="#/memories" class="tile t-green"><svg viewBox="0 0 24 24" class="ic"><rect x="3" y="5" width="18" height="14" rx="3"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-5-4-9 7"/></svg><strong>ذكرياتنا</strong><small>صور يوم الطفل</small></a>
-        <a href="#/teacher" class="tile t-lilac wide"><svg viewBox="0 0 24 24" class="ic"><path d="M4 5a2 2 0 012-2h12v16H6a2 2 0 00-2 2zM4 21V5M9 8h6"/></svg><strong>كلمة المعلمة</strong><small>رسالة محبة لأطفالنا</small></a>
+        <a href="#/wishes" class="tile t-yellow"><svg class="deco" aria-hidden="true"><use href="/art.svg#star"/></svg><strong>أمنيات الأطفال</strong><small>اكتب أمنيتك</small></a>
+        <a href="#/moms" class="tile t-pink"><svg class="deco" aria-hidden="true"><use href="/art.svg#heart"/></svg><strong>ركن الأمهات</strong><small>رسائل من القلب</small></a>
+        <a href="#/game" class="tile t-blue"><svg class="deco" aria-hidden="true"><use href="/art.svg#balloon" style="--c:#FF6B6B"/></svg><strong>لعبتنا</strong><small>لعبة الأزواج</small></a>
+        <a href="#/memories" class="tile t-green"><svg class="deco" aria-hidden="true"><use href="/art.svg#flower" style="--c:#FF8FB1"/></svg><strong>ذكرياتنا</strong><small>صور يوم الطفل</small></a>
+        <a href="#/teacher" class="tile t-lilac wide"><svg class="deco" aria-hidden="true"><use href="/art.svg#cloud"/></svg><strong>كلمة المعلمة</strong><small>رسالة محبة من معلمتنا لأطفالنا وأمهاتنا</small></a>
       </nav>
     </section>
 
     <!-- الأمنيات -->
     <section class="page" id="page-wishes" data-title="أمنيات الأطفال" hidden>
-      <h2 class="ptitle c-yellow">أمنيات الأطفال</h2>
-      <p class="psub">اكتب اسمك وأمنيتك، وستظهر بطاقتك للجميع فورًا!</p>
+      <div class="pbanner b-yellow">
+        <div><h2>أمنيات الأطفال</h2><p>اكتب اسمك وأمنيتك، وستظهر بطاقتك للجميع فورًا!</p></div>
+        <svg class="pb" viewBox="0 0 100 110" aria-hidden="true">
+          <use href="/art.svg#star" x="56" y="0" width="30" height="30"/><use href="/art.svg#heart" x="2" y="14" width="22" height="22" style="--c:#FF9DB5"/>
+          <use href="/art.svg#girl" x="14" y="26" width="64" height="96"/>
+        </svg>
+      </div>
       <form id="wishForm" class="card form" novalidate>
         <label>اسمك
           <input name="name" maxlength="40" placeholder="مثال: سارة" autocomplete="off" required>
@@ -84,14 +118,19 @@
           <svg viewBox="0 0 24 24" class="ic"><path d="M4 12l16-8-6 16-3-7z"/></svg> إرسال أمنيتي
         </button>
       </form>
-      <h3 class="list-title">أمنيات أصدقائنا</h3>
+      <h3 class="list-title"><svg class="art" aria-hidden="true"><use href="/art.svg#star"/></svg>أمنيات أصدقائنا</h3>
       <div id="wishList" class="cards" aria-live="polite"></div>
     </section>
 
     <!-- ركن الأمهات -->
     <section class="page" id="page-moms" data-title="ركن الأمهات" hidden>
-      <h2 class="ptitle c-pink">ركن الأمهات</h2>
-      <p class="psub">اكتبي رسالة أو أمنية لطفلك، وستجدينها هنا بين رسائل الأمهات.</p>
+      <div class="pbanner b-pink">
+        <div><h2>ركن الأمهات</h2><p>اكتبي رسالة أو أمنية لطفلك، وستجدينها هنا بين رسائل الأمهات.</p></div>
+        <svg class="pb" viewBox="0 0 100 110" aria-hidden="true">
+          <use href="/art.svg#heart" x="52" y="0" width="34" height="34"/><use href="/art.svg#heart" x="4" y="22" width="20" height="20" style="--c:#FFC2D1"/>
+          <use href="/art.svg#boy" x="14" y="26" width="64" height="96" style="--shirt:#6BCB77"/>
+        </svg>
+      </div>
       <form id="momForm" class="card form" novalidate>
         <label>اسم طفلك
           <input name="child_name" maxlength="40" placeholder="مثال: عمر" autocomplete="off" required>
@@ -104,15 +143,20 @@
           <svg viewBox="0 0 24 24" class="ic"><path d="M12 21s-7-4.5-9.3-9A5.3 5.3 0 0112 6.2 5.3 5.3 0 0121.3 12C19 16.5 12 21 12 21z"/></svg> إرسال الرسالة
         </button>
       </form>
-      <h3 class="list-title">رسائل الأمهات</h3>
+      <h3 class="list-title"><svg class="art" aria-hidden="true"><use href="/art.svg#heart"/></svg>رسائل الأمهات</h3>
       <div id="momList" class="cards" aria-live="polite"></div>
     </section>
 
     <!-- لعبتنا -->
     <section class="page" id="page-game" data-title="لعبتنا" hidden>
-      <h2 class="ptitle c-blue">لعبتنا</h2>
-      <p class="psub">اقلب البطاقات وابحث عن الصور المتشابهة!</p>
-      <div class="scorebar"><span>المحاولات: <b id="gMoves">٠</b></span><span>الأزواج: <b id="gPairs">٠</b>/٦</span></div>
+      <div class="pbanner b-blue">
+        <div><h2>لعبتنا</h2><p>اقلب البطاقات وابحث عن الصور المتشابهة!</p></div>
+        <svg class="pb" viewBox="0 0 100 110" aria-hidden="true">
+          <use href="/art.svg#balloon" x="58" y="0" width="38" height="38" style="--c:#FF6B6B"/><use href="/art.svg#cloud" x="0" y="10" width="40" height="40"/>
+          <use href="/art.svg#girl" x="14" y="26" width="64" height="96" style="--dress:#B388EB"/>
+        </svg>
+      </div>
+      <div class="scorebar"><span>المحاولات: <b id="gMoves">٠</b></span><span>الأزواج: <b id="gPairs">٠</b> / ٦</span></div>
       <div id="board" class="board" role="grid" aria-label="لوحة اللعبة"></div>
       <p class="win" id="gWin" hidden>أحسنت يا بطل! أكملت اللعبة!</p>
       <button class="btn btn-big btn-blue" id="gReset" type="button">
@@ -122,27 +166,51 @@
 
     <!-- ذكرياتنا -->
     <section class="page" id="page-memories" data-title="ذكرياتنا" hidden>
-      <h2 class="ptitle c-green">ذكرياتنا</h2>
-      <p class="psub">لحظات جميلة من يوم الطفل. اضغط على أي صورة لتكبيرها.</p>
+      <div class="pbanner b-green">
+        <div><h2>ذكرياتنا</h2><p>لحظات جميلة من يوم الطفل. اضغط على أي صورة لتكبيرها.</p></div>
+        <svg class="pb" viewBox="0 0 100 110" aria-hidden="true">
+          <use href="/art.svg#sun" x="56" y="0" width="38" height="38"/>
+          <use href="/art.svg#flower" x="4" y="50" width="26" height="40" style="--c:#FF8FB1"/><use href="/art.svg#flower" x="68" y="58" width="26" height="40" style="--c:#B388EB"/>
+          <use href="/art.svg#boy" x="22" y="26" width="58" height="87" style="--shirt:#FF6B6B"/>
+        </svg>
+      </div>
       <div class="gallery" id="gallery"></div>
     </section>
 
     <!-- كلمة المعلمة -->
     <section class="page" id="page-teacher" data-title="كلمة المعلمة" hidden>
-      <h2 class="ptitle c-lilac">كلمة المعلمة</h2>
+      <div class="pbanner b-lilac">
+        <div><h2>كلمة المعلمة</h2><p>رسالة محبة لأطفالنا الأعزاء ولأمهاتنا الكريمات.</p></div>
+        <svg class="pb" viewBox="0 0 100 110" aria-hidden="true">
+          <use href="/art.svg#heart" x="62" y="2" width="28" height="28"/><use href="/art.svg#star" x="4" y="12" width="24" height="24"/>
+          <use href="/art.svg#teacher" x="14" y="26" width="72" height="72"/>
+        </svg>
+      </div>
       <article class="card letter">
         <div class="teacher">
-          <svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="40" fill="#EADCFF"/><path d="M14 74c2-16 14-22 26-22s24 6 26 22z" fill="#B388EB"/><circle cx="40" cy="34" r="14" fill="#FFD9B8"/><path d="M24 34c0-12 8-18 17-18s15 6 15 18c-3-7-8-10-15-10s-13 3-17 10z" fill="#5a3b2e"/><circle cx="35" cy="35" r="1.6" fill="#333"/><circle cx="45" cy="35" r="1.6" fill="#333"/><path d="M35 41q5 4 10 0" stroke="#c0504d" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
-          <div><strong>معلمتكم الحبيبة</strong><small>بمناسبة اليوم العالمي للطفل</small></div>
+          <svg aria-hidden="true"><use href="/art.svg#teacher" style="--hijab:#8E5BD9;--bg:#EADCFF"/></svg>
+          <div><strong>المعلمة آلاء بنت محمد بن مفرس</strong><small>بمناسبة اليوم العالمي للطفل</small></div>
         </div>
         <p>أحبائي الصغار،</p>
         <p>في يوم الطفل أريد أن أقول لكم: أنتم نور صفّنا وضحكتكم أجمل ما في يومنا. تعلّمون معلمتكم كل يوم معنى الفرح والفضول والبراءة.</p>
         <p>تذكّروا دائمًا أن أحلامكم كبيرة وأنكم قادرون على تحقيقها بالاجتهاد والمحبة والصدق. كونوا لطفاء مع أصدقائكم، واسألوا كثيرًا، ولا تخافوا أن تجرّبوا وتخطئوا، فالخطأ بداية التعلّم.</p>
-        <p>وشكرًا لأمهاتكم وآبائكم الذين يرافقونكم بكل حب في رحلتكم.</p>
+        <p>أمهاتنا الكريمات، شكرًا لكنّ على ثقتكنّ ودعمكنّ ومرافقتكنّ لأطفالكنّ بكل حب في رحلتهم، فأنتنّ شريكات النجاح.</p>
         <p class="sign">كل عام وأنتم بخير يا أبطالي، وأنا فخورة بكم جميعًا.</p>
+        <p class="from">معلمتكم آلاء بنت محمد بن مفرس<br>مع تحيات مديرة المدرسة عايشة جازي بن دابس</p>
       </article>
     </section>
   </main>
+
+  <footer class="foot">
+    <svg viewBox="0 0 360 64" aria-hidden="true">
+      <use href="/art.svg#flower" x="6" y="12" width="30" height="46" style="--c:#FF8FB1"/><use href="/art.svg#heart" x="52" y="30" width="22" height="22"/>
+      <use href="/art.svg#flower" x="84" y="14" width="30" height="46" style="--c:#FFD43B"/><use href="/art.svg#star" x="130" y="26" width="24" height="24"/>
+      <use href="/art.svg#flower" x="166" y="10" width="30" height="46" style="--c:#B388EB"/><use href="/art.svg#heart" x="212" y="30" width="22" height="22" style="--c:#FF9DB5"/>
+      <use href="/art.svg#flower" x="246" y="14" width="30" height="46" style="--c:#4CC9F0"/><use href="/art.svg#star" x="292" y="26" width="24" height="24"/>
+      <use href="/art.svg#flower" x="324" y="12" width="30" height="46" style="--c:#FF6B6B"/>
+    </svg>
+    <p>ابتدائية مخطط ٥٤ والروضة الملحقة بها<br>كل عام وأطفالنا بخير</p>
+  </footer>
 
   <nav class="tabbar" aria-label="التنقل">
     <a href="#/" data-tab=""><svg viewBox="0 0 24 24" class="ic"><path d="M3 11l9-8 9 8v9a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z"/></svg><span>الرئيسية</span></a>
@@ -150,6 +218,7 @@
     <a href="#/moms" data-tab="moms"><svg viewBox="0 0 24 24" class="ic"><path d="M12 21s-7-4.5-9.3-9A5.3 5.3 0 0112 6.2 5.3 5.3 0 0121.3 12C19 16.5 12 21 12 21z"/></svg><span>الأمهات</span></a>
     <a href="#/game" data-tab="game"><svg viewBox="0 0 24 24" class="ic"><rect x="3" y="8" width="18" height="10" rx="5"/><path d="M8 11v4M6 13h4M16 12h.01M18 14h.01"/></svg><span>لعبتنا</span></a>
     <a href="#/memories" data-tab="memories"><svg viewBox="0 0 24 24" class="ic"><rect x="3" y="5" width="18" height="14" rx="3"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-5-4-9 7"/></svg><span>ذكرياتنا</span></a>
+    <a href="#/teacher" data-tab="teacher"><svg viewBox="0 0 24 24" class="ic"><path d="M4 5a2 2 0 012-2h12v16H6a2 2 0 00-2 2zM4 21V5M9 8h6"/></svg><span>المعلمة</span></a>
   </nav>
 </div>
 
