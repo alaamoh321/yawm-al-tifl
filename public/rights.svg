@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <g id="face">
+      <circle cx="0" cy="0" r="15" fill="#FFD9B8"/>
+      <circle cx="-5.5" cy="-1" r="2" fill="#3b2f4a"/><circle cx="5.5" cy="-1" r="2" fill="#3b2f4a"/>
+      <ellipse cx="-9" cy="4" rx="3" ry="2" fill="#FF8FA3" opacity=".6"/><ellipse cx="9" cy="4" rx="3" ry="2" fill="#FF8FA3" opacity=".6"/>
+      <path d="M-5 5q5 6 10 0z" fill="#B23A48"/>
+    </g>
+  </defs>
+  <!-- التعليم -->
+  <symbol id="r-edu" viewBox="0 0 120 120">
+    <rect width="120" height="120" rx="20" fill="#CFE8FF"/>
+    <rect x="12" y="14" width="64" height="40" rx="4" fill="#2E7D5B" stroke="#8B5E3C" stroke-width="3"/>
+    <text x="44" y="42" font-size="20" font-weight="700" fill="#fff" text-anchor="middle" font-family="sans-serif">A B ج</text>
+    <rect x="8" y="94" width="104" height="18" rx="6" fill="#B07A4F"/>
+    <rect x="60" y="62" width="50" height="8" rx="3" fill="#D9A066"/>
+    <path d="M70 108l4-30h30l4 30z" fill="#FF6B6B"/>
+    <path d="M66 82l-10 14M112 82l6 12" stroke="#FFD9B8" stroke-width="7" stroke-linecap="round"/>
+    <rect x="48" y="92" width="22" height="14" rx="2" fill="#FFC93C" stroke="#E0A800"/>
+    <g transform="translate(88 58)"><path d="M-17 -4a17 17 0 0134 0c-6-8-12-8-17-6-6-2-11-2-17 6z" fill="#5a3b2e"/><use href="#face"/><path d="M-17 -6a17 17 0 0134 0c-6-7-12-8-17-6-6-2-11-1-17 6z" fill="#5a3b2e"/></g>
+    <path d="M76 38l12-6 12 6-12 6z" fill="#333"/><path d="M82 41v6q6 3 12 0v-6" fill="#555"/>
+  </symbol>
+  <!-- اللعب -->
+  <symbol id="r-play" viewBox="0 0 120 120">
+    <rect width="120" height="120" rx="20" fill="#D7F3FF"/>
+    <circle cx="96" cy="24" r="12" fill="#FFD43B"/>
+    <path d="M0 92q60-24 120 0v28H0z" fill="#7FD28A"/>
+    <path d="M42 112l6-40h24l6 40z" fill="#FFC93C"/>
+    <path d="M46 78l-18-16M74 78l16-22" stroke="#FFD9B8" stroke-width="8" stroke-linecap="round"/>
+    <g transform="translate(60 52)"><path d="M-16 -4a16 16 0 0132 0c-6-8-11-8-16-6-5-2-10-2-16 6z" fill="#3b2a22"/><use href="#face"/><path d="M-16 -6a16 16 0 0132 0c-7-6-11-5-16-9-5 4-9 3-16 9z" fill="#3b2a22"/></g>
+    <circle cx="96" cy="48" r="13" fill="#FF6B6B" stroke="#fff" stroke-width="3"/><path d="M85 48q11-12 22 0M96 35v26" stroke="#fff" stroke-width="3" fill="none"/>
+    <rect x="46" y="108" width="12" height="8" rx="3" fill="#4C6EF5"/><rect x="62" y="108" width="12" height="8" rx="3" fill="#4C6EF5"/>
+  </symbol>
+  <!-- الحب والرعاية -->
+  <symbol id="r-love" viewBox="0 0 120 120">
+    <rect width="120" height="120" rx="20" fill="#FFE3EC"/>
+    <path d="M60 22c-10-14-30-4-22 10 5 8 16 14 22 18 6-4 17-10 22-18 8-14-12-24-22-10z" fill="#FF6B8B"/>
+    <path d="M10 118l6-44h28l6 44z" fill="#4C6EF5"/><path d="M70 118l6-44h28l6 44z" fill="#B388EB"/>
+    <path d="M32 112l6-30h44l6 30z" fill="#FFC93C"/>
+    <g transform="translate(30 62) scale(.95)"><use href="#face"/><path d="M-15 -3a15 15 0 0130 0c-8-9-22-9-30 0z" fill="#3b2a22"/></g>
+    <g transform="translate(90 62) scale(.95)"><use href="#face"/><path d="M-15 -3a15 15 0 0130 0c-8-9-22-9-30 0zM-15 -3v16M15 -3v16" fill="#6b3b2e" stroke="#6b3b2e" stroke-width="3"/></g>
+    <g transform="translate(60 84) scale(.8)"><use href="#face"/><path d="M-15 -3a15 15 0 0130 0c-8-9-22-9-30 0z" fill="#5a3b2e"/></g>
+    <path d="M36 96q24 14 48 0" stroke="#FFD9B8" stroke-width="8" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <!-- الصحة -->
+  <symbol id="r-health" viewBox="0 0 120 120">
+    <rect width="120" height="120" rx="20" fill="#DDF7F0"/>
+    <path d="M8 118l6-44h34l6 44z" fill="#fff" stroke="#9ad" stroke-width="2"/>
+    <g transform="translate(31 58)"><use href="#face"/><path d="M-15 -3a15 15 0 0130 0c-8-9-22-9-30 0z" fill="#3b2a22"/></g>
+    <path d="M22 72q9 18 18 0" stroke="#4C6EF5" stroke-width="3" fill="none"/><circle cx="31" cy="92" r="4" fill="#4C6EF5"/>
+    <path d="M54 118l4-36h32l4 36z" fill="#FF8FB1"/>
+    <g transform="translate(74 66) scale(.9)"><use href="#face"/><path d="M-15 -3a15 15 0 0130 0c-8-9-22-9-30 0z" fill="#5a3b2e"/></g>
+    <rect x="76" y="38" width="22" height="9" rx="4" fill="#fff" stroke="#e0a" stroke-width="1"/>
+    <rect x="86" y="16" width="26" height="26" rx="6" fill="#fff"/><path d="M99 21v16M91 29h16" stroke="#E03131" stroke-width="5" stroke-linecap="round"/>
+    <path d="M52 88l-12 2" stroke="#FFD9B8" stroke-width="7" stroke-linecap="round"/>
+  </symbol>
+  <!-- الغذاء -->
+  <symbol id="r-food" viewBox="0 0 120 120">
+    <rect width="120" height="120" rx="20" fill="#FFF3C9"/>
+    <path d="M30 118l5-36h50l5 36z" fill="#6BCB77"/>
+    <g transform="translate(60 54)"><path d="M-16 -4a16 16 0 0132 0c-6-8-11-8-16-6-5-2-10-2-16 6z" fill="#8a5a2b"/><use href="#face"/><path d="M-16 -6a16 16 0 0132 0c-7-6-11-5-16-9-5 4-9 3-16 9z" fill="#8a5a2b"/></g>
+    <rect x="12" y="96" width="96" height="10" rx="5" fill="#B07A4F"/>
+    <ellipse cx="60" cy="92" rx="30" ry="8" fill="#fff" stroke="#ddd" stroke-width="2"/>
+    <circle cx="46" cy="86" r="8" fill="#FF4D4D"/><path d="M46 78q2-5 6-6" stroke="#4FB35E" stroke-width="3" fill="none"/>
+    <path d="M64 90l12-10 4 6z" fill="#FF922B"/><circle cx="76" cy="88" r="6" fill="#FFD43B"/><circle cx="86" cy="90" r="5" fill="#8ED081"/>
+    <path d="M44 78l8-8M76 78l-8-8" stroke="#FFD9B8" stroke-width="6" stroke-linecap="round"/>
+  </symbol>
+  <!-- الأمان والحماية -->
+  <symbol id="r-safe" viewBox="0 0 120 120">
+    <rect width="120" height="120" rx="20" fill="#E6E0FF"/>
+    <path d="M12 62L60 20l48 42v50H12z" fill="#FFB3A7"/><path d="M6 64L60 14l54 50" stroke="#C9473F" stroke-width="8" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+    <rect x="86" y="24" width="10" height="20" fill="#C9473F"/>
+    <rect x="22" y="72" width="76" height="40" rx="4" fill="#fff" opacity=".35"/>
+    <g transform="translate(60 92)"><path d="M-16 -4a16 16 0 0132 0c-6-8-11-8-16-6-5-2-10-2-16 6z" fill="#3b2a22"/><use href="#face"/><path d="M-16 -6a16 16 0 0132 0c-7-6-11-5-16-9-5 4-9 3-16 9z" fill="#3b2a22"/></g>
+    <path d="M60 34c-8 4-14 4-18 4v14c0 10 8 16 18 20 10-4 18-10 18-20V38c-4 0-10 0-18-4z" fill="#4C6EF5" stroke="#fff" stroke-width="3"/>
+    <path d="M52 52l6 6 11-12" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <!-- التعبير عن الرأي -->
+  <symbol id="r-voice" viewBox="0 0 120 120">
+    <rect width="120" height="120" rx="20" fill="#FFE8CC"/>
+    <path d="M52 8h60a8 8 0 018 8v32a8 8 0 01-8 8H84l-14 12v-12H52a8 8 0 01-8-8V16a8 8 0 018-8z" transform="translate(-6 0) scale(.98)" fill="#fff" stroke="#FF922B" stroke-width="3"/>
+    <path d="M62 26h40M62 36h30" stroke="#FF922B" stroke-width="5" stroke-linecap="round"/>
+    <path d="M24 118l5-38h30l5 38z" fill="#38B6FF"/>
+    <path d="M62 86l14-24M30 86l-10-6" stroke="#FFD9B8" stroke-width="8" stroke-linecap="round"/>
+    <g transform="translate(44 62)"><path d="M-17 -4a17 17 0 0134 0c-6-8-12-8-17-6-6-2-11-2-17 6z" fill="#5a3b2e"/><use href="#face"/><path d="M-17 -6a17 17 0 0134 0c-7-6-12-5-17-9-5 4-10 3-17 9z" fill="#5a3b2e"/></g>
+    <ellipse cx="44" cy="68" rx="6" ry="5" fill="#B23A48"/>
+  </symbol>
+</svg>

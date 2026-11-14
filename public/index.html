@@ -82,7 +82,7 @@
       <nav class="menu" aria-label="أقسام الموقع">
         <a href="#/wishes" class="tile t-yellow"><svg class="deco" aria-hidden="true"><use href="/art.svg#star"/></svg><strong>أمنيات الأطفال</strong><small>اكتب أمنيتك</small></a>
         <a href="#/moms" class="tile t-pink"><svg class="deco" aria-hidden="true"><use href="/art.svg#heart"/></svg><strong>دوني مشاعرك أيتها الأم وأمنياتك لطفلكـ</strong><small>رسائل من القلب</small></a>
-        <a href="#/game" class="tile t-blue"><svg class="deco" aria-hidden="true"><use href="/art.svg#balloon" style="--c:#FF6B6B"/></svg><strong>لعبتنا</strong><small>لعبة الأزواج</small></a>
+        <a href="#/game" class="tile t-blue"><svg class="deco" aria-hidden="true"><use href="/art.svg#balloon" style="--c:#FF6B6B"/></svg><strong>لعبتنا</strong><small>طابق حقوق الطفل</small></a>
         <a href="#/memories" class="tile t-green"><svg class="deco" aria-hidden="true"><use href="/art.svg#flower" style="--c:#FF8FB1"/></svg><strong>ذكرياتنا</strong><small>صور يوم الطفل</small></a>
         <a href="#/teacher" class="tile t-lilac wide"><svg class="deco" aria-hidden="true"><use href="/art.svg#cloud"/></svg><strong>كلمة المعلمة</strong><small>رسالة محبة من معلمتنا لأطفالنا وأمهاتنا</small></a>
       </nav>
@@ -149,17 +149,19 @@
     <!-- لعبتنا -->
     <section class="page" id="page-game" data-title="لعبتنا" hidden>
       <div class="pbanner b-blue">
-        <div><h2>لعبتنا</h2><p>اقلب البطاقات وابحث عن الصور المتشابهة!</p></div>
+        <div><h2>لعبتنا</h2><p>طابق كل صورة مع حقّ الطفل المناسب لها!</p></div>
         <svg class="pb" viewBox="0 0 100 110" aria-hidden="true">
           <use href="/art.svg#balloon" x="58" y="0" width="38" height="38" style="--c:#FF6B6B"/><use href="/art.svg#cloud" x="0" y="10" width="40" height="40"/>
           <use href="/art.svg#girl" x="14" y="26" width="64" height="96" style="--dress:#B388EB"/>
         </svg>
       </div>
-      <div class="scorebar"><span>المحاولات: <b id="gMoves">٠</b></span><span>الأزواج: <b id="gPairs">٠</b> / ٦</span></div>
-      <div id="board" class="board" role="grid" aria-label="لوحة اللعبة"></div>
-      <p class="win" id="gWin" hidden>أحسنت يا بطل! أكملت اللعبة!</p>
-      <button class="btn btn-big btn-blue" id="gReset" type="button">
-        <svg viewBox="0 0 24 24" class="ic"><path d="M3 12a9 9 0 109-9 9 9 0 00-6.4 2.6L3 8M3 3v5h5"/></svg> لعبة جديدة
+      <div class="scorebar"><span>المطابقات الصحيحة: <b id="gPairs">٠</b> / ٧</span></div>
+      <p class="gmsg" id="gMsg" role="status" aria-live="polite"></p>
+      <div id="tray" class="tray" aria-label="الصور"></div>
+      <div id="slots" class="slots" aria-label="حقوق الطفل"></div>
+      <p class="win" id="gWin" hidden>أحسنت يا بطل! 🎉 طابقت كل حقوق الطفل، ما أجملك! 🌟</p>
+      <button class="btn btn-big btn-blue" id="gReset" type="button" hidden>
+        <svg viewBox="0 0 24 24" class="ic"><path d="M3 12a9 9 0 109-9 9 9 0 00-6.4 2.6L3 8M3 3v5h5"/></svg> العب مرة أخرى
       </button>
     </section>
 

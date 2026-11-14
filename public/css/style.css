@@ -110,16 +110,23 @@ input:focus, textarea:focus { border-color: var(--sky); outline: none; }
 
 /* game */
 .scorebar { display: flex; justify-content: space-between; background: #fff; padding: 8px 18px; border-radius: 99px; margin-bottom: 14px; font-weight: 700; box-shadow: 0 3px 0 #eadfc6; }
-.board { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 18px; }
-.card-flip { aspect-ratio: 1; border: 0; padding: 0; background: none; perspective: 600px; cursor: pointer; border-radius: 24px; }
-.card-flip .in { position: relative; width: 100%; height: 100%; transition: transform .4s; transform-style: preserve-3d; display: block; }
-.card-flip.open .in, .card-flip.done .in { transform: rotateY(180deg); }
-.card-flip .f, .card-flip .b { position: absolute; inset: 0; border-radius: 24px; backface-visibility: hidden; display: grid; place-items: center; box-shadow: 0 5px 0 rgba(0, 0, 0, .16); border: 3px solid #fff; }
-.card-flip .f { background: radial-gradient(circle at 30% 25%, #8EDCF7, #8E7CF0); }
-.card-flip .f svg { width: 52%; height: 52%; opacity: .9; }
-.card-flip .b { background: #fff; transform: rotateY(180deg); }
-.card-flip .b svg { width: 70%; height: 70%; }
-.card-flip.done .b { background: #eafbe9; box-shadow: 0 5px 0 #8fd699; }
+.tray { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 14px; touch-action: pan-y; }
+.gpic { aspect-ratio: 1; border: 4px solid #fff; padding: 0; border-radius: 24px; background: #fff; box-shadow: 0 5px 0 rgba(0, 0, 0, .16); cursor: grab; touch-action: none; transition: transform .15s; }
+.gpic svg { width: 100%; height: 100%; display: block; pointer-events: none; }
+.gpic.sel { outline: 5px solid #FF8E3C; transform: scale(1.06); }
+.gpic.lift { opacity: .35; }
+.gpic.shake { animation: shake .45s; }
+.ghost { position: fixed; width: 96px; height: 96px; transform: translate(-50%, -50%) scale(1.1); z-index: 99; pointer-events: none; opacity: .92; filter: drop-shadow(0 8px 8px rgba(0,0,0,.3)); }
+.slots { display: grid; gap: 10px; margin-bottom: 16px; }
+.gslot { display: flex; align-items: center; gap: 12px; min-height: 76px; padding: 8px 12px; border: 3px dashed #8E7CF0; border-radius: 24px; background: #fff; font: inherit; font-size: 20px; font-weight: 700; color: var(--ink); text-align: start; cursor: pointer; }
+.gslot .sp { flex: none; width: 60px; height: 60px; border-radius: 16px; background: #f1ecff; }
+.gslot .sp svg { width: 100%; height: 100%; display: block; }
+.gslot .st { flex: 1; min-width: 0; }
+.gslot:active { background: #f1ecff; }
+.gslot.done { border: 3px solid #8fd699; background: #eafbe9; opacity: 1; color: var(--ink); }
+.gmsg { margin: 0 0 12px; min-height: 2.6em; text-align: center; font-family: var(--font-h); font-size: 24px; line-height: 1.4; color: #5a4a6a; }
+.gmsg.ok { color: #1a7a33; } .gmsg.no { color: #c2570c; }
+@keyframes shake { 20%, 60% { transform: translateX(-8px); } 40%, 80% { transform: translateX(8px); } }
 .win { text-align: center; font-family: var(--font-h); font-size: 24px; color: #1a7a33; background: #e4f8e6; padding: 12px; border-radius: 24px; margin: 0 0 14px; animation: pop .5s; }
 
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }

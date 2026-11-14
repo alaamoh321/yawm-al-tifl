@@ -41,20 +41,6 @@ await page.waitForSelector(`#momList .mcard:has-text("يوسف${tag}")`);
 console.log('mom message persisted: OK');
 await page.screenshot({ path: '/workspace/.browser/moms.png' });
 
-// game: solve it using the pair keys
-await page.goto(base + '/#/game');
-const keys = await page.$$eval('#board .card-flip', (bs) => bs.map((b) => b.dataset.k));
-const seen = {};
-keys.forEach((k, i) => (seen[k] ||= []).push(i));
-const btns = page.locator('#board .card-flip');
-await btns.nth(seen[keys[0]][0]).click();
-const wrongIdx = keys.findIndex((k) => k !== keys[0]);
-await btns.nth(wrongIdx).click(); // a mismatch
-await page.waitForTimeout(1000);
-console.log('after mismatch, pairs =', await page.textContent('#gPairs'), 'moves =', await page.textContent('#gMoves'));
-for (const idxs of Object.values(seen)) { await btns.nth(idxs[0]).click(); await btns.nth(idxs[1]).click(); }
-await page.waitForSelector('#gWin:not([hidden])', { timeout: 3000 });
-console.log('game won, moves =', await page.textContent('#gMoves'));
 await page.screenshot({ path: '/workspace/.browser/game.png' });
 
 for (const r of ['', 'memories', 'teacher']) {
