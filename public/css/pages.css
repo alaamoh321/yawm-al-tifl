@@ -43,6 +43,9 @@
 .letter { border: 3px dashed #cfb2f6; }
 .teacher { display: flex; gap: 14px; align-items: center; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 3px dotted #e4d3fb; }
 .teacher .bf { width: 64px; height: 64px; flex: none; animation: flutter 3.2s ease-in-out infinite; }
+.teacher .bf-emoji { display: grid; place-items: center; font-size: 52px; line-height: 1; animation: emojiFloat 3.6s ease-in-out infinite; }
+@keyframes emojiFloat { 0%, 100% { transform: translateY(0) rotate(-8deg) scaleX(1); } 25% { transform: translateY(-4px) rotate(0) scaleX(.82); } 50% { transform: translateY(-7px) rotate(8deg) scaleX(1); } 75% { transform: translateY(-3px) rotate(0) scaleX(.82); } }
+@media (prefers-reduced-motion: reduce) { .teacher .bf-emoji { animation: none; } }
 .teacher > div { min-width: 0; flex: 1; }
 .teacher strong { display: block; font-size: 19px; line-height: 1.6; }
 .teacher small { color: var(--muted); }
