@@ -2,8 +2,8 @@
   --yellow: #FFC93C; --coral: #FF6B6B; --sky: #4CC9F0; --mint: #6BCB77; --lilac: #B388EB; --pink: #FF8FB1;
   --cream: #FFFAEB; --ink: #3b2f4a; --muted: #5a4a6a;
   --r: 24px;
-  --font-h: "Playpen Sans Arabic", "Segoe UI", system-ui, sans-serif;
-  --font-b: "Playpen Sans Arabic", "Segoe UI", system-ui, sans-serif;
+  --font-h: "Baloo Bhaijaan 2", "Segoe UI", system-ui, sans-serif;
+  --font-b: "Baloo Bhaijaan 2", "Segoe UI", system-ui, sans-serif;
 }
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 html { scroll-behavior: smooth; }

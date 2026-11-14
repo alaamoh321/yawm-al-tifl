@@ -31,7 +31,7 @@ ok(lines.some((l) => l.t.includes('عايشة جازي بن دابس')), 'princi
 ok(await page.locator('.staff .bf').count() === 2, 'two butterflies in staff strip');
 ok(await page.locator('.staff .av, use[href$="#teacher"]').evaluateAll((n) => n.filter((e) => e.closest('.staff, .letter')).length) === 0, 'no cartoon avatars beside names');
 ok(await page.locator('.logo-chip img').evaluate((i) => i.complete && i.naturalWidth > 0), 'MoE logo loaded');
-ok((await page.evaluate(() => document.fonts.check('16px "Playpen Sans Arabic"'))), 'childlike font loaded');
+ok((await page.evaluate(() => document.fonts.check('16px "Baloo Bhaijaan 2"'))), 'childlike font loaded');
 const overflow = () => page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
 
 for (const r of ['', 'wishes', 'moms', 'game', 'memories', 'teacher']) {

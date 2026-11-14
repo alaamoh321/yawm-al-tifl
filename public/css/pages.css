@@ -1,6 +1,6 @@
 /* page banners */
 .pbanner { display: flex; align-items: center; justify-content: space-between; gap: 8px; border-radius: 30px; padding: 14px 16px 0 10px; margin: 8px 0 16px; overflow: hidden; border: 3px solid rgba(255, 255, 255, .8); box-shadow: 0 6px 0 rgba(0, 0, 0, .12); min-height: 128px; }
-.pbanner h2 { font-size: 30px; line-height: 1.2; margin: 0 0 4px; font-weight: 800; }
+.pbanner h2 { font-size: 28px; line-height: 1.4; margin: 0 0 4px; font-weight: 800; }
 .pbanner p { margin: 0 0 14px; font-size: 15.5px; line-height: 1.55; color: #3b2f4a; }
 .pbanner .pb { width: 96px; height: 106px; flex: none; align-self: flex-end; }
 .b-yellow { background: #FFD968; } .b-pink { background: #FFB3CB; } .b-blue { background: #98DDF7; } .b-green { background: #9BE6A5; } .b-lilac { background: #D3B9F7; }
