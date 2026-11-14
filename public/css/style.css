@@ -2,8 +2,8 @@
   --yellow: #FFC93C; --coral: #FF6B6B; --sky: #4CC9F0; --mint: #6BCB77; --lilac: #B388EB; --pink: #FF8FB1;
   --cream: #FFFAEB; --ink: #3b2f4a; --muted: #5a4a6a;
   --r: 24px;
-  --font-h: "Baloo Bhaijaan 2", "Tajawal", system-ui, sans-serif;
-  --font-b: "Tajawal", system-ui, sans-serif;
+  --font-h: "Playpen Sans Arabic", "Segoe UI", system-ui, sans-serif;
+  --font-b: "Playpen Sans Arabic", "Segoe UI", system-ui, sans-serif;
 }
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 html { scroll-behavior: smooth; }
@@ -27,10 +27,18 @@ h1, h2, h3, strong, .btn, .tabbar span { font-family: var(--font-h); }
 .logo-chip { background: #fff; border-radius: 20px; padding: 6px 10px; box-shadow: 0 3px 0 #f0dfa8; flex: none; }
 .logo-chip img { display: block; width: 92px; height: auto; }
 .school small { display: block; color: var(--muted); font-size: 13px; line-height: 1.2; }
-.school strong { display: block; font-size: 19px; line-height: 1.35; font-weight: 800; }
+.school { min-width: 0; flex: 1; }
+.school strong { display: block; font-size: 17px; line-height: 1.6; font-weight: 800; }
 .staff { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 0 16px 6px; padding: 10px; background: #fff; border-radius: 24px; border: 3px solid #E6D6FF; box-shadow: 0 4px 0 #E6D6FF; }
 .person { display: flex; gap: 8px; align-items: center; min-width: 0; }
-.person .av { width: 42px; height: 42px; flex: none; }
+.person .bf { width: 36px; height: 36px; flex: none; animation: flutter 3.2s ease-in-out infinite; }
+.person > div { min-width: 0; flex: 1; }
+.fit { white-space: nowrap; overflow: hidden; }
+.person .fit { font-size: 15px; line-height: 1.5; }
+[hidden] { display: none !important; }
+@media (max-width: 430px) { .staff { grid-template-columns: 1fr; gap: 8px; } }
+@keyframes flutter { 0%, 100% { transform: rotate(-8deg) translateY(0); } 50% { transform: rotate(8deg) translateY(-3px); } }
+@media (prefers-reduced-motion: reduce) { .person .bf, .teacher .bf { animation: none; } }
 .person small { display: block; font-size: 12.5px; color: var(--muted); line-height: 1.2; }
 .person b { display: block; font-family: var(--font-h); font-weight: 800; font-size: 14.5px; line-height: 1.3; }
 
@@ -54,7 +62,8 @@ main { padding: 6px 18px 20px; }
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: 0; cursor: pointer; text-decoration: none; font-size: 18px; font-weight: 600; padding: 12px 20px; border-radius: 99px; transition: transform .15s, box-shadow .15s; color: var(--ink); }
 .btn-big { width: 100%; min-height: 64px; font-size: 21px; color: #fff; box-shadow: 0 6px 0 rgba(0, 0, 0, .2); }
 .btn-big:active { transform: translateY(4px); box-shadow: 0 2px 0 rgba(0, 0, 0, .2); }
-.btn:focus-visible, input:focus-visible, textarea:focus-visible, .tile:focus-visible, .card-flip:focus-visible, .tabbar a:focus-visible, .gallery button:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+.btn:focus-visible, input:focus-visible, textarea:focus-visible, .tile:focus-visible, .card-flip:focus-visible, .tabbar a:focus-visible, .gallery .ph-img:focus-visible, .mini:focus-visible, .owner .link:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+.btn-green { background: #1F8A3E; }
 .btn-coral { background: #D93F4A; } .btn-pink { background: #C92A6A; } .btn-blue { background: #0A7DA6; }
 .btn-soft { background: #fff3c4; border: 2px dashed #e0b73a; width: 100%; min-height: 56px; }
 .btn[disabled] { opacity: .6; pointer-events: none; }
@@ -97,7 +106,7 @@ input:focus, textarea:focus { border-color: var(--sky); outline: none; }
 .preview img { width: 110px; height: 110px; object-fit: cover; border-radius: 22px; border: 4px solid var(--yellow); display: block; }
 .preview button { position: absolute; top: -8px; inset-inline-start: -8px; width: 34px; height: 34px; border-radius: 50%; border: 0; background: #D93F4A; color: #fff; font-size: 20px; cursor: pointer; line-height: 1; }
 .msg { margin: 0; min-height: 1.2em; font-weight: 700; }
-.msg.err { color: #b3261e; } .msg.ok { color: #1a7a33; }
+.msg.err, .msg.bad { color: #b3261e; } .msg.ok { color: #1a7a33; }
 
 /* game */
 .scorebar { display: flex; justify-content: space-between; background: #fff; padding: 8px 18px; border-radius: 99px; margin-bottom: 14px; font-weight: 700; box-shadow: 0 3px 0 #eadfc6; }

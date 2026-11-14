@@ -31,8 +31,13 @@ function art(id, cls, style) {
   return svg;
 }
 
-async function api(path, body) {
-  const res = await fetch(path, body ? { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) } : undefined);
+// api(path) reads; api(path, body) posts; api(path, body, { method, code }) for the owner calls
+async function api(path, body, opts = {}) {
+  const headers = {};
+  if (body) headers['Content-Type'] = 'application/json';
+  if (opts.code) headers['x-owner-code'] = opts.code;
+  const method = opts.method || (body ? 'POST' : 'GET');
+  const res = await fetch(path, { method, headers, body: body ? JSON.stringify(body) : undefined });
   const data = await res.json().catch(() => ({}));
   if (!res.ok) throw new Error(data.error || 'حدث خطأ، حاول مرة أخرى');
   return data;

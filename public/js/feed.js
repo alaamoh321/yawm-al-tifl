@@ -96,6 +96,7 @@ const Feed = (() => {
       const es = new EventSource('/api/stream');
       es.addEventListener('wishes', () => loadWishes().catch(() => {}));
       es.addEventListener('moms', () => loadMoms().catch(() => {}));
+      es.addEventListener('memories', () => Memories.refresh());
     }
     setInterval(() => { if (!document.hidden) { loadWishes().catch(() => {}); loadMoms().catch(() => {}); } }, 15000);
   }

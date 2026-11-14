@@ -67,10 +67,13 @@ app.post('/api/moms', (req, res) => {
   res.status(201).json({ id: Number(info.lastInsertRowid), child_name, message });
 });
 
+app.use('/api/memories', require('./memories')(broadcast));
+
 app.use('/api', (_req, res) => res.status(404).json({ error: 'غير موجود' }));
 app.use((err, _req, res, _next) => {
   const status = err.status || 500;
-  res.status(status).json({ error: status === 413 ? 'الحجم كبير جدًا' : 'حدث خطأ، حاول مرة أخرى' });
+  const known = status === 400 && err.expose !== false && err.message && /[؀-ۿ]/.test(err.message);
+  res.status(status).json({ error: status === 413 ? 'الحجم كبير جدًا' : known ? err.message : 'حدث خطأ، حاول مرة أخرى' });
 });
 
 module.exports = app;
